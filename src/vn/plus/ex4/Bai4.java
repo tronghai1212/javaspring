@@ -6,7 +6,7 @@ import java.util.Map;
 public class Bai4 {
     public static Map<String, String> map = new HashMap<>();
     public static boolean flag = false;
-    public static int key;
+    public static String key;
     public static void main(String[] args) {
         map.put("Monday", "thứ 2");
         map.put("Tuesday", "thứ 3");
@@ -16,5 +16,9 @@ public class Bai4 {
         map.put("Saturday", "thứ 7");
         map.put("Sunday", "Chủ nhật");
 
+        GenDay m1 = new GenDay();
+        CheckDay m2 = new CheckDay();
+        m1.start();
+        m2.start();
     }
 }
